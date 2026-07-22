@@ -6,6 +6,6 @@
 </head>
 <body>
     <h1><?php echo htmlspecialchars($title); ?></h1>
-    <p>Welcome to the PHP MVC framework.</p>
+    <p>Welcome to dfdfdfgdfthe PHP MfghfrtghrthVC framework.</p>
 </body>
 </html>
