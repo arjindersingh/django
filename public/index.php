@@ -1,7 +1,7 @@
 <?php
 
 require_once __DIR__ . '/../project/core/Application.php';
-require_once __DIR__ . '/../app/Controllers/HomeController.php';
+require_once __DIR__ . '/../project/controllers/HomeController.php';
 
 $config = require __DIR__ . '/../project/settings.php';
 $projectUrls = require __DIR__ . '/../project/urls.php';
