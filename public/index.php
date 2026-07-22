@@ -1,15 +1,13 @@
 <?php
 
-require_once __DIR__ . '/../app/Core/Application.php';
+require_once __DIR__ . '/../project/core/Application.php';
 require_once __DIR__ . '/../app/Controllers/HomeController.php';
 
-$config = [
-    'name' => 'Django in PHP',
-    'debug' => true,
-    'apps' => [],
-];
+$config = require __DIR__ . '/../project/settings.php';
+$projectUrls = require __DIR__ . '/../project/urls.php';
 
 $app = new Application($config);
-$app->get('/', [HomeController::class, 'index']);
-$app->get('/posts/{id}', [HomeController::class, 'show']);
+foreach ($projectUrls as $pattern => $handler) {
+    $app->get($pattern, $handler);
+}
 $app->run();

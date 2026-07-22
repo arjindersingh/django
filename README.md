@@ -4,12 +4,13 @@ This repository contains a lightweight PHP MVC framework inspired by Django-styl
 
 ## Structure
 - project/: the main project package with settings, URLs, and core modules
-- project/core/: project-level core package
-- project/urls/: project URL configuration package
+- project/core/: project-level Django-style core package
+- project/settings.php: project configuration registry
+- project/urls.php: project-level URL registry
 - apps/: individual application directories
-- apps/<app>/urls/: app-level URL package
+- apps/<app>/urls.php: app-level URL registration
 - apps/<app>/templates/<app>/: app-specific templates, following the common Django convention
-- app/Core/: framework base classes
+- app/Controllers/: controller layer for shared app views
 - public/: web entrypoint
 
 ## Run locally
